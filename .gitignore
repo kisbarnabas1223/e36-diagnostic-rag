@@ -1,0 +1,11 @@
+# Python virtuális környezet
+venv/
+__pycache__/
+
+# specifikus fájlok
+faiss_index/
+docs/
+
+# Operációs rendszer fájljai
+.DS_Store
+Thumbs.db
