@@ -46,22 +46,27 @@ A Qwen modell letöltése terminálból.
 
 2. Környezet beállítása:
 
-# Repo klónozása és belépés
-git clone <saját-repo-linked>
+**Repo klónozása és belépés**
+```bash
+git clone https://github.com/kisbarnabas1223/e36-diagnostic-rag.git
 cd e36-diagnostic-rag
+```
 
-# Virtuális környezet (venv) létrehozása és aktiválása
+**Virtuális környezet (venv) létrehozása és aktiválása**
+```bash
 python -m venv venv
-source venv/Scripts/activate  # Windowson (Bash)
+source venv/Scripts/activate # Windowson (Bash)
+```
 
-# Függőségek telepítése
-pip install langchain langchain-community faiss-cpu pymupdf sentence-transformers ollama
+**Függőségek telepítése**
+```bash
+pip install -r requirements.txt
+```
 
-
-3. Adatbázis építése:
-Tedd be a szervizkönyv PDF-eket a docs/ mappába, majd:
-
+3. Adatbázis építése: Tedd be a szervizkönyv PDF-eket a docs/ mappába, majd:
+```bash
 python ingest.py
+```
 
 
 4. Kérdezz-Felelek indítása:
