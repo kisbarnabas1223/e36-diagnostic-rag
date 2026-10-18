@@ -54,7 +54,7 @@ cd e36-diagnostic-rag
 
 **Virtuális környezet (venv) létrehozása és aktiválása**
 ```bash
-python -m venv venv
+py -3.11 -m venv venv
 source venv/Scripts/activate # Windowson (Bash)
 ```
 
